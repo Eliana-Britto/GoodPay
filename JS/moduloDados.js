@@ -1,4 +1,3 @@
-const alertaLogin = new bootstrap.Modal(document.getElementById(alertaLogin));
 const userLogin = [
     {
         id: 1001,
@@ -25,22 +24,4 @@ const userLogin = [
         email:"elimarcondes@gmail.com"
     }
     ];
-
- function login() {
-    let login = document.getElementById("login").value;
-    let senha = document.getElementById("senha").value;
-let vali
-
-
-
-    if(login === "victorioicoma" && senha === "123456") {
-        alert("Parabens está logado");
-        
-    }else if(login ==! "victorioicoma" && senha === "123456"){
-        alert("verifique seu login e tente novamente")
-    }else if(login === "victorioicoma" && senha )
-
-    alertaLogin,show();
-    
-
-}
+    export default userLogin
