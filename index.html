@@ -1,37 +1,38 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>GoodPay</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Good Pay</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.css">
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/index.js" defer></script>
 </head>
-
 <body>
   <header>
     <nav class="navbar bg-light fixed-top">
       <div class="container-fluid">
-        <img src="img/logo/GoodPay Banner.png" alt="Logo em texto" width="100px" height="70px">
-        <a class="navbar-brand" href="#">[Money for Good]</a>
+        <img src="img/logo/GoodPay Banner.png" alt="Logo em Texto" width="100px" height="70px" />
+        <a class="navbar-brand" href="#">[money for good]</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
           aria-controls="offcanvasNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header">
-            <img src="img/logo/GoodPay.png" alt="icone" width="80px" height="60px">
+            <img src="img/logo/GoodPay.png" alt="Icone App" width="50px" height="50px" />
             <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
             <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Pesquisar no App" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
+              <input class="form-control me-2" type="search" placeholder="Pesquisar no App" aria-label="Search" />
+              <button class="btn btn-outline-success" type="submit">
+                Buscar
+              </button>
             </form>
-            <div class="accordion" id="accordionPanelsStayOpenExample" style="margin-top: 5%;">
+            <div class="accordion" id="accordionPanelsStayOpenExample" style="margin-top: 5%">
               <div class="accordion-item">
                 <h2 class="accordion-header" id="panelsStayOpen-headingOne">
                   <button class="accordion-button" type="button" data-bs-toggle="collapse"
@@ -43,19 +44,19 @@
                 <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
                   aria-labelledby="panelsStayOpen-headingOne">
                   <div class="accordion-body">
-                    <div class="input-group input-group-lg formAjuste">
-                      <span class="input-group-text" id="inputGroup-sizing-lg">Login:</span>
-                      <input type="text" class="form-control btnAjuste" aria-label="Sizing example input"
-                        aria-describedby="inputGroup-sizing-lg">
+                    <div class="input-group input-group-lg mb-2">
+                      <span class="input-group-text btnAjuste" id="inputGroup-sizing-lg">Login</span>
+                      <input type="text" class="form-control" aria-label="Sizing example input"
+                        aria-describedby="inputGroup-sizing-lg" />
                     </div>
-                    <div class="input-group input-group-lg formAjuste">
-                      <span class="input-group-text" id="inputGroup-sizing-lg">Senha:</span>
-                      <input type="text" class="form-control btnAjuste" aria-label="Sizing example input"
-                        aria-describedby="inputGroup-sizing-lg">
-                    </div>
-                    <div class="d-grid gap-2 formAjuste">
-                      <button class="btn btn-primary" type="button">Entrar</button>
-                      <button class="btn btn-primary" type="button">Cadastre-se</button>
+                    <div class="input-group input-group-lg mb-2">
+                      <span class="input-group-text btnAjuste" id="inputGroup-sizing-lg">Senha</span>
+                      <input type="password" class="form-control" aria-label="Sizing example input"
+                        aria-describedby="inputGroup-sizing-lg" />
+                    </div>                                                    
+                    <div class="d-grid gap-2 formAjuste">                    <!---->
+                      <button class="btn btn-outline-success" type="button" onclick="loginForm()">Entrar</button>                                                   <!---->
+                      <button class="btn btn-outline-primary" type="button">Cadastro</button>
                     </div>
                   </div>
                 </div>
@@ -71,21 +72,23 @@
                 <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
                   aria-labelledby="panelsStayOpen-headingTwo">
                   <div class="accordion-body">
-                    <h3>DevTeam <span class="badge bg-secondary">BCW 22</span></h3>
+                    <h3>
+                      DevTeam <span class="badge bg-secondary">BCW 22</span>
+                    </h3>
                     <p>
-                      Este aplicativo não tem conexão com o banco de dados, o desenvolvimento
-                      deste aplicativo tem como
-                      finalidade o aprendizado de aplicações e interface web. Assim o uso deste
-                      aplicativo deve ser
-                      pensado como um
-                      protótipo não funcional.
+                      Este aplicativo não tem conexão com o banco de dados, o
+                      desenvolvimento deste aplicativo tem como finalidade o
+                      aprendizado de aplicações e interface web. Assim o uso
+                      deste aplicativo deve ser pensado como um protótipo não
+                      funcional.
                     </p>
                     <p>
-                      A aplicação usa elementos de personalização em Bootstrap 5, com Javascript
-                      local,
-                      os dados utilizados para e adicionados neste interface não são enviados a um
+                      A aplicação usa elementos de personalização em Bootstrap
+                      5, com Javascript local, os dados utilizados para e
+                      adicionados neste interface não são enviados a um
                       serviço.
-                    </p>**
+                    </p>
+                    **
                   </div>
                 </div>
               </div>
@@ -101,23 +104,22 @@
                   aria-labelledby="panelsStayOpen-headingThree">
                   <div class="accordion-body">
                     <p>
-                      Tech For Good: 5 pilares que vão transformar o mundo: Educação, Diversidade,
-                      Saúde, Longevidade e
+                      Tech For Good: 5 pilares que vão transformar o mundo:
+                      Educação, Diversidade, Saúde, Longevidade e
                       Sustentabilidade
                     </p>
                     <p>
-                      Nossa missão é a formação e o emprego, aplicando os 5 pilares do "Tech For
-                      Good". Ser uma escola
-                      inclusiva, que, através de nossa metodologia ágil, possa capacitar e educar
-                      em tecnologia, gerar
-                      oportunidades de emprego para todas as gerações, no início ou na
-                      ressignificação de carreira, com
-                      foco em diversidade e equidade. Numa profissão que fomente o bem-estar
-                      físico e mental, permitindo
-                      o
-                      equilíbrio entre a vida profissional e pessoal, através do trabalho remoto,
-                      com flexibilidade de
-                      horários, além de ser um negócio sustentável e responsável, socialmente.
+                      Nossa missão é a formação e o emprego, aplicando os 5
+                      pilares do "Tech For Good". Ser uma escola inclusiva,
+                      que, através de nossa metodologia ágil, possa capacitar
+                      e educar em tecnologia, gerar oportunidades de emprego
+                      para todas as gerações, no início ou na ressignificação
+                      de carreira, com foco em diversidade e equidade. Numa
+                      profissão que fomente o bem-estar físico e mental,
+                      permitindo o equilíbrio entre a vida profissional e
+                      pessoal, através do trabalho remoto, com flexibilidade
+                      de horários, além de ser um negócio sustentável e
+                      responsável, socialmente.
                     </p>
                   </div>
                 </div>
@@ -127,15 +129,123 @@
         </div>
       </div>
     </nav>
-
   </header>
   <main>
-
+    <div class="ajusteMain">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="card mb-3">
+              <img src="IMG/banner/BannerGoodPay.png" class="card-img-top" alt="Imagem Promocional para Banner" />
+              <div class="card-body">
+                <h5 class="card-title">Work for you</h5>
+                <p class="card-text">
+                  GoodPay é uma aplicação de cash back focada em ASG (Agenda
+                  de Matriz Sustentavel), assim reduzindo o volume de dinheiro
+                  impresso e capitalizando sobre o capital parado e
+                  transformando em renda para micro comunidades de
+                  empreendimento ambiental.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">Publicado, 07 de julho 2022</small>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card mb-3">
+              <img src="IMG/banner/BannerGoodPay2.png" class="card-img-top" alt="Imagem Promocional para Banner" />
+              <div class="card-body">
+                <h5 class="card-title">100% de CDI</h5>
+                <p class="card-text">
+                  Ao guardar seu dinheiro no fundo verde, você terá as
+                  melhores taxas de retorno e ainda um rendimento melhor que a
+                  poupança. Fora que os fundos gerados por este recurso são
+                  investidos em cooperativas de reciclagem.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card mb-3">
+              <img src="IMG/banner/BannerGoodPay3.png" class="card-img-top" alt="Imagem Promocional para Banner" />
+              <div class="card-body">
+                <h5 class="card-title">The Pig Time</h5>
+                <p class="card-text">
+                  Ao utilizar o sistema de investimento com aniversário você
+                  aumenta consideravelmente seus lucros, porém tem que agendar
+                  uma data para quebrar o cofre, nesta data coletará os lucros
+                  acumulados e o capital novamente, aqui garantimos em
+                  investimentos de 1 ano 7% do retorno geral somado aos
+                  dividendos. "-Bora poupar no Pig Time"
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">Publicado, 07 de julho 2022</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="card-group">
+        <div class="card">
+          <img src="img/quadrado/1.png" class="card-img-top" alt="Imagem Grupo Card" />
+          <div class="card-body">
+            <h5 class="card-title">Planejamento</h5>
+            <p class="card-text">
+              Faça seu dinheiro render utilizando os 
+              sistemas de investimento do GoodPay.
+            </p>
+            <p class="card-text">
+              <small class="text-muted">07 de julho de 2022</small>
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/quadrado/2.png" class="card-img-top" alt="Imagem Grupo Card" />
+          <div class="card-body">
+            <h5 class="card-title">GP no Bolso</h5>
+            <p class="card-text">
+              Com o App do GoodPay você acompanha seu porquinho 
+              de qualquer lugar.
+            </p>
+            <p class="card-text">
+              <small class="text-muted">07 de julho de 2022</small>
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/quadrado/3.png" class="card-img-top" alt="Imagem Grupo Card" />
+          <div class="card-body">
+            <h5 class="card-title">Gaste Bem</h5>
+            <p class="card-text">
+              Planejar e gastar bem são os segredos de quem deseja 
+              um investimento futuro e sua segurança financeira.
+            </p>
+            <p class="card-text">
+              <small class="text-muted">07 de julho de 2022</small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
-  <footer>
+  <!--Area do modal)-->
+  <footer>  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
       crossorigin="anonymous"></script>
+      <script src="js/index.js" defer></script>
   </footer>
 </body>
 </html>
