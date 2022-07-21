@@ -18,6 +18,7 @@ public class EqXn extends Equacao {
         this.xp = xp;
     }
     //#endregion
+    
     //#region regra de negócio
     public double calculaXn(Delta delta) {
         xn = (-delta.getB() - Math.sqrt(delta.getDelta()));

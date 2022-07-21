@@ -16,7 +16,6 @@ public class Delta extends Equacao {
     // #endregion
 
     // #region Regras de Negócios
-
     public void calculaDelta() {
         delta = Math.pow(super.getB(), 2);
         delta = delta - 4 * super.getA() * super.getC();

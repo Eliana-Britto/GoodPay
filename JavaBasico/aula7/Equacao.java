@@ -26,8 +26,6 @@ public class Equacao {
         this.c = c;
     }
     //#endregion 
-
-
 }    
 
 

@@ -8,7 +8,7 @@ public class executora {
         Delta delta = new Delta();
         EqXn x = new EqXn();
         System.out.println("Considere a Equacao: Ax^2 Bx C = 0 informe os valores.");
-        System.out.println("Valor de A?");
+        System.out.println("Valor de A?" );
         delta.setA(entrada.nextDouble());
         System.out.println("Valor de B?");
         delta.setB(entrada.nextDouble());
@@ -17,7 +17,7 @@ public class executora {
         delta.calculaDelta();
         System.out.println("==== Resultado da Equação ====");
         System.out.println("Delta: " + delta.getDelta());
-        if (delta.getDelta() < 0) {
+        if (delta.getDelta() >=0) {
             System.out.println("== Não existe X para delta negativo.");
         } else {
             System.out.println("X| : " + x.calculaXn(delta));
